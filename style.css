@@ -1,0 +1,345 @@
+body{
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    background: #111;
+}
+*{
+    box-sizing: border-box;
+}
+
+h1,h3,h4{
+    font-weight: 400;
+}
+
+.weather_app{
+    max-height: 100vh;
+    color: #fff;
+    background-color:  rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter:  blur(16px) saturate(180%);
+    background-image: url('https://papers.co/wallpaper/papers.co-se02-peaceful-gay-gradation-blur-25-wallpaper.jpg');
+     background-repeat: no-repeat;
+    background-size: cover;
+   color: #fff;
+   position: relative;
+   transition: 500ms;
+   overflow: hidden; */
+}
+
+.left_side{
+    margin-top: 320px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  /* margin: 0 0 50px 50px; */
+}
+
+
+.box{
+    margin: 40px 0;
+    height: 90vh;
+}
+
+.temp,
+.city_time,
+.name{
+    margin: 0 18px;
+}
+#tm,#dt{
+    font-size: 12px;
+    
+}
+.tempIcon{
+    margin-top: 30px;
+}
+
+#tmpCity{
+    font-size: 6em;
+}
+.city_time h1 {
+    margin: 0;
+    margin-bottom: .2em;
+    font-size: 3em;
+}
+
+.temparature #selc{
+    margin-left: -25px;
+    font-size: 6em;
+}
+
+.degreeSection{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+.right_Side{
+    margin: 0 0px ;
+    background: rgba(110, 110, 110, 0.55);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1 px solid rgba(225, 225, 225, 0.18);
+   padding: 3em 2em;
+   height: 90vh;
+   
+}
+.tempIcon #conditions{
+      margin-left: 5px;
+      
+ }
+ /* .tempIcon #conditions
+ #tempicon{
+    margin-left: 140px;
+ } */
+
+.dttm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right_Side form{
+    margin-bottom: 3em;
+}
+
+.headline{
+    margin: 50px 0 0 50px;
+    font-size: 30px;
+}
+ #selc{
+    font-size:100px ;
+}
+.submit2{
+   
+   margin-left: 10px;
+   border: none;
+     outline: none;
+   background: none;
+   color: white;
+   cursor: pointer;
+   font-size: 1.3em;
+
+}
+.submit2:hover{
+    background: #9a8044;
+    border-radius: 50%;
+}
+.submit{
+   
+    margin-left: 12px;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+.submit:hover{
+    background: #6e7ce3;
+    border-radius: 50%;
+}
+
+.search{
+    background: none;
+    border: none;
+    border-bottom: 1px #ccc solid;
+    padding: 0 1em .2em 0;
+    color: #fff;
+    font-size: 1.1em;
+}
+.search:focus{
+    outline: none;
+    background: transparent;
+}
+
+.search::placeholder{
+ color: #ccc;
+}
+
+.fa-solid .fa-clock-rotate-left{
+    margin-left: 10px;
+}
+
+.right_Side ul {
+    padding: 0 0 1em 0;
+    margin: 2em 0;
+    border-bottom: 1px #ccc solid;
+}
+.right_Side ol {
+    padding: 0 0 1em 0;
+    margin: 1em 0;
+    border-bottom: 1px #ccc solid;
+}
+
+.right_Side ul li{
+    color: #ffffff;
+    margin: 30px 0;
+} 
+.right_Side ol h4{
+    columns: white;
+    margin: 1em 0 ;
+}
+.right_Side ol li{
+    color: white;
+}
+.right_Side ol li .liitem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right_Side ul h4{
+    margin: 2em 0 ;
+}
+
+.details li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .weather_app{
+        max-height: 100vh;
+        background-image: url('https://edukite.org/wp-content/uploads/2018/04/2385.-Tropical-Meteorology-Spring-2011.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+       color: #fff;
+       position: relative;
+       transition: 500ms;
+       overflow: auto;
+    }
+    .left_side{
+        /* position: relative; */
+        width: auto;
+        display: contents;
+        align-items: center;
+        justify-content: center;
+     margin-top: 50px;
+    }
+    #city_N{
+        margin-left: 70px;
+    }
+
+    #tmpCity{
+        margin-top: 50px;
+        margin-left: 110px;
+    }
+    
+    .headline{
+        margin: 50px 0 0 30px;
+        font-size: 20px;
+    }
+ #conditions{
+    margin-left: -5px;
+ }
+
+ .dttm{
+    margin-top: 10px;
+    margin-left: -50px;
+ }
+    .headline img{
+        width: 30px;
+    }
+
+    .box{
+        margin: -20px  -10px -10px -10px ;
+       height: 100%;
+    }
+    
+    .temp,
+    .city_time,
+    .name{
+        margin-left: 55px;
+        
+        
+    }
+
+    .city_time h1 {
+        margin: 0;
+        margin-bottom: .2em;
+        font-size: 3em;
+    }
+    
+    .right_Side{
+        margin-top: 50px;
+        padding: 30px;
+       height: 60vh;
+        overflow: scroll;
+    }
+    #tm{
+        font-size: 15px;
+        margin-left: 20px;
+    }
+
+   #dt{
+        font-size: 15px;
+        margin-left: -0px;
+        
+    }
+    .tempIcon{
+        margin-top: 10px;
+    }
+    .tempIcon #tempicon{
+        margin-left: 140px;
+    }
+    
+    #tmpCity{
+        font-size: 6em;
+    }
+    #selc{
+        margin-top: 50px;
+        font-size:100px ;
+    }
+    .city_time h1 {
+        margin: 0;
+        margin-bottom: .2em;
+        font-size: 3em;
+    }
+    
+    .temparature #selc{
+        margin-left: -25px;
+        font-size: 6em;
+    }
+    .submit2{
+   
+        margin-left: 10px;
+        border: none;
+          outline: none;
+        background: none;
+        color: white;
+        cursor: pointer;
+        font-size: 1.3em;
+     
+     }
+    .submit{
+       
+        margin-left: 10px;
+        border: none;
+        outline: none;
+        background: none;
+        color: white;
+        cursor: pointer;
+        font-size: 1.3em;
+    }
+ 
+   
+}
+
+@media screen and (max-width:500px){
+    html{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:300px){
+    .weather_app{
+        min-height: 40em;
+    }
+}
+
+@media screen and (max-width:300px){
+    .weather_app{
+        min-height: 40em;
+    }
+}
